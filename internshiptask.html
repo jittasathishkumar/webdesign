@@ -1,0 +1,826 @@
+<html>
+    <head>
+        <title>Welcome</title>
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+
+    </head>
+    <style>
+                body{
+            font-family:  Arial, sans-serif; /* font family is fixed for all text*/
+
+        }
+        .imagecontainer{
+            position: relative;
+            color: aliceblue;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, -100%);
+            font-size: 600%;
+            font-weight: bold;
+        }
+        .centered2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-105%);
+            font-size: 70%;
+            font-weight: bold;
+        }
+        .centereddish{
+            position: absolute;
+            top: 3%;
+            left: 2%;
+            font-size: 100%;
+            font-weight: bold;
+        }
+        .centeredbars{                   /*bars icon styling*/
+            position: absolute;
+            top: 40%;
+            left: 2%;
+            font-size: 70%;
+            font-weight: bold;
+        }
+        .centeredfollow{                   /*follow us icon styling*/
+            position: absolute;
+            top: 68%;
+            left: 0.5%;
+            font-size: 70%;
+            font-weight: bold;
+            transform: rotate(270deg); text-align: center;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+           
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 2%;
+            left: 2%;
+            transform: translateX(90%); 
+        }
+    
+        .c1{
+            margin-left: 15%; /* Set the left margin to 15% of the container width */
+            margin-top: 5%; /* Set the top margin to 5% of the container height */
+            font-size: 350%;/* Set the font size to 350% of the default size */
+        }
+        .c2{
+            margin-left: 15%; /* Set the left margin to 15% of the container width */
+            margin-top: -4%;/* Set the top margin to -4% of the container height */
+            font-size: 350%; /* Set the font size to 350% of the default size */
+        }
+        .c3{
+            margin-left: 15%; /* Set the left margin to 15% of the container width */
+            margin-top: 0%;/* Set the top margin to 0% of the container height */
+            font-size: 140%;  /* Set the font size to 140% of the default size */
+            color: rgba(47, 46, 46, 0.765);  /* Set the text color with RGBA value */
+        }
+        .c4{
+            margin-left: 15%;  /* Set the left margin to 15% of the container width */
+            margin-top: -2%; /* Set the top margin to -2% of the container height */
+            font-size: 140%;/* Set the font size to 140% of the default size */
+            color: rgba(47, 46, 46, 0.765); /* Set the text color with RGBA value */
+        }
+
+        
+
+        .headings{
+            margin-left: 15%;  /* Set the left margin to 15% of the container width */
+            margin-top: 2%;/* Set the top margin to 2% of the container height */
+        }
+        .container {
+           display: flex; /* Use flexbox for layout */
+           justify-content: space-between; /* Space between items */
+        
+        
+      }
+        .container > div {
+            flex: 1;  /* Equal distribution of space */
+            max-width: 50%; /* Maximum width of each div */
+            text-align: left;  /* Left-align text */
+            font-size: 80%; /* Font size 90% of the default size */
+        }
+ 
+        .container2 {
+           display: flex; /* Use flexbox for layout */
+           justify-content: space-between; /* Space between items */
+      }
+        .container2 > div {
+            flex: 1;  /* Equal distribution of space */
+            max-width: 50%; /* Maximum width of each div */
+            text-align: left;  /* Left-align text */
+            font-size: 80%; /* Font size 90% of the default size */
+        }
+        .container3 {
+           display: flex; /* Use flexbox for layout */
+           justify-content: space-between; /* Space between items */
+      }
+        .container3 > div {
+            flex: 1;  /* Equal distribution of space */
+            max-width: 50%; /* Maximum width of each div */
+            text-align: left;  /* Left-align text */
+            font-size: 80%; /* Font size 90% of the default size */
+        }
+
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20%;
+            margin-top: -9%;
+            padding-right: 20%;
+            
+        }
+
+        .team-member {
+            text-align: center;
+            width: 20%;
+            margin-right: 2%;
+        }
+
+        .member-image {
+            width: 100%;
+            border-radius: 0%;
+        }
+
+        .member-info {
+            color: rgba(21, 21, 22, 0.941);
+            font-size: 14px;
+            text-align: center;
+        }
+        .flex {
+          
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 30%;
+            margin-left: 49%;
+            margin-top: -15%;
+            padding-bottom: 10%;
+            }
+
+        .box {
+            width: 33.33%; 
+            height: 33.33%; 
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-container {
+            background-image: url('C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\globe-dots-black3 (1).png'); /* Replace 'background-image.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.805);
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 20%;
+            position: relative;         
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        .content {
+            color: aliceblue;
+            position: relative;
+            z-index: 1;
+        }
+        .fourthpage{
+            background-color: rgb(18, 15, 15); padding-top: 12%; padding-bottom: 13%;
+        }
+        .para1{
+            margin-left: 50%; font-size: 3em; color: aliceblue; margin-top: -4rem; font-weight: bold;
+        }
+        .fourthpagediv2{
+            display: inline-block; background-color: aquamarine; padding: 4%;
+        }
+        .para2{
+            color: rgba(12, 13, 15, 0.768);  background-color: aquamarine; font-size: 1em;  border-bottom: 0.1rem solid rgba(18, 39, 60, 0.314); padding-bottom: 5px; /* green content */
+        }
+        .fourthpageimg{
+            border-radius: 50%; height: 5%;
+        }
+        .fourthpagediv2{
+            margin-left: 20%; margin-top: -25%;
+        }
+        .para3{
+            margin-top: -5%;
+        }
+        .fifthpagehead{
+            margin-left: 20%;
+            font-size: 250%;
+        }
+        .div4class1{
+            color: aliceblue;  font-size: 100%; padding-left: 50%; margin-top: -10%;
+        }
+        .page6para1{
+            font-size: 120%;
+        }
+        .page6div1{
+            margin-left: 68%; margin-top: -3%;
+        }
+        .page6para2{
+            color: rgba(240, 248, 255, 0.651); font-size: 400%; font-family: 'MS PGothic', serif;
+        }
+        .page6div2{
+            border-bottom: 2px solid aquamarine; width: 7.5%; margin-top: -1%;
+        }
+        .page6para3{
+            border-bottom: 2px solid rgba(150, 150, 150, 0.221); width: 80%; padding-top: 7%;
+        }
+        .page6para4{
+            margin-left: 62%; margin-top: -3%;
+        }
+        .page6para5{
+            margin-top: 5%;
+        }
+        .thiedpagehead1{
+            color: aliceblue; margin-left: 35%;
+        }
+        .thiedpagehead2{
+            color: aliceblue; margin-left: 30%;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+
+        .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-55%, -100%);
+                font-size: 600%;
+                font-weight: bold;
+            }
+        .centered2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-55%);
+                font-size: 70%;
+                font-weight: bold;
+            }
+            .c1{
+                margin-left: 12%; /* Digital web products*/
+                margin-top: 5%;
+                font-size: 250%;
+            }
+            .c2{
+                margin-left: 12%; 
+                margin-top: -4%;
+                font-size: 250%; 
+            }
+            .c3{
+                margin-left: 12%; 
+                margin-top: 0%;
+                font-size: 80%;  
+                color: rgba(47, 46, 46, 0.765);  
+            }
+            .c4{
+                margin-left: 12%; 
+                margin-top: -2%;
+                font-size: 80%;
+                color: rgba(47, 46, 46, 0.765); /* Set the text color with RGBA value */
+            }
+    
+        
+         .fourthpagediv2{
+                margin-left: 5%;
+                margin-top: -28%;
+                padding: 5%;
+                
+            }
+        .para1{
+                font-size: 2rem;
+            
+            }
+        .fourthpagediv4{
+                margin-left: -20%;
+                font-size: 80%;
+        }
+        .div4class1{
+                margin-left: 8%;  
+                font-size: 100%;   
+                margin-top: -12%;       
+        }
+        .fifthpagehead{
+            font-size: 250%;
+            margin-left: 15px;
+        }
+        .flex {
+          
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 30%;
+            margin-left: 49%;
+            margin-top: -25%;
+            padding-bottom: 10%;
+            }
+
+        .box {
+            width: 33.33%; 
+            height: 33.33%; 
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 1%;
+            margin-top: -9%;
+            padding-right: 0%;
+            
+        }
+
+        .team-member {
+            text-align: center;
+            width: 20%;
+            margin-right: 2%;
+        }
+
+        .member-image {
+            width: 100%;
+            border-radius: 0%;
+        }
+
+        .member-info {
+            color: rgba(21, 21, 22, 0.941);
+            font-size: 14px;
+            text-align: center;
+        }
+        .page6para1{
+            font-size: 130%;
+            margin-left: -20%;
+        }
+        .page6div1{   /*lastpage icons*/
+            margin-left: 68%; margin-top: -7%;
+        }
+        .page6para2{
+            color: rgba(240, 248, 255, 0.651); font-size: 300%; font-family: 'MS PGothic', serif;
+            margin-left: -20%;
+        }
+        .page6div2{
+            border-bottom: 2px solid aquamarine; width: 15.5%; margin-top: -1%;
+            margin-left: -20%;
+        }
+        .page6para3{
+            border-bottom: 2px solid rgba(150, 150, 150, 0.221); width: 115%; padding-top: 7% ;
+            margin-left: -20%;
+        }
+        .page6para4{
+            margin-left: 62%; margin-top: -5%;
+        }
+        .page6para5{
+            margin-left: -20%;
+        }
+        .page6para6{
+            margin-left: -20%;
+        }
+        .secondpagepara{   /* 01 02 03 04 */
+            font-size: 65%;
+        }
+        .centeredfollow{                   /*follow us icon styling*/
+            position: absolute;
+            top: 68%;
+            left: -2%;
+            font-size: 70%;
+            font-weight: bold;
+            transform: rotate(270deg); text-align: center;
+        }
+
+        }
+        
+
+@media only screen and (max-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+    .para1{  /*studio proud*/
+        font-size: 250%;
+    }
+    .c1{
+        margin-left: 12%; /* Digital web products*/
+        margin-top: 5%;
+        font-size: 100%;
+    }
+    .c2{
+        margin-left: 12%; 
+        margin-top: -4%;
+        font-size: 100%; 
+    }
+    .c3{
+        margin-left: 12%; 
+        margin-top: -2%;
+        font-size: 40%;  
+        color: rgba(47, 46, 46, 0.765);  
+    }
+    .c4{
+        margin-left: 12%; 
+        margin-top: -2%;
+        font-size: 40%;
+        color: rgba(47, 46, 46, 0.765); /* Set the text color with RGBA value */
+    }
+    .secondpagepara{   /* 01 02 03 04 */
+        font-size: 60%;
+    }
+    .headings{ /* secodnd page headdings*/
+        margin-left: 10%; 
+        margin-top: 2%;
+    }
+
+    .thiedpagehead1{
+        color: aliceblue; margin-left: 25%;
+    }
+    .thiedpagehead2{
+        color: aliceblue; margin-left: 10%;
+
+    }
+    .fourthpagediv2{               /*green content*/
+        margin-left: 5%;
+        margin-top: -38%;
+        padding: 5%;
+        
+    }
+    .fourthpagediv4{                   /* All about our team */
+        margin-left: -13%;
+        font-size: 60%;
+}
+    .div4class1{                               /* beside all about our team*/
+        margin-left: 8%;  
+        font-size: 50%;   
+        margin-top: -12%;       
+    }
+
+    
+    .image-container {                   /* team images */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20%;
+        margin-top: -5%;
+        padding-right: 20%;
+        
+    }
+    .fifthpagehead{              /*Agency proud*/
+        font-size: 80%;
+        margin-left: 175px;
+    }
+    .flex {              /*flex box*/
+          
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 10%;
+        margin-left: 55%;
+        margin-top: -15%;
+        padding-bottom: 10%;
+        }
+     .box {     /*flex box*/
+        width: 33.33%; 
+        height: 33.33%; 
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .page6para1{
+        font-size: 60%;
+        margin-left: -8%;
+    }
+
+    .page6div1{   /*lastpage icons*/
+        margin-left: 68%; margin-top: -5%;
+        font-size: 50%;
+        }
+    .page6para2{            /*need more info*/
+        color: rgba(240, 248, 255, 0.651); font-size: 300%; font-family: 'MS PGothic', serif;
+        margin-left: -10%;
+    }
+    .page6div2{
+        border-bottom: 2px solid aquamarine; width: 15.5%; margin-top: -1%;
+        margin-left: -20%;
+    }
+    .page6para3{
+        border-bottom: 2px solid rgba(150, 150, 150, 0.221); width: 115%; padding-top: 7% ;
+        margin-left: -20%;
+    }
+    .page6para4{
+        margin-left: 62%; margin-top: -5%;
+        font-size: 20%;
+    }
+    .page6para5{  /* get in touch*/
+        margin-left: -20%;
+        font-size: 50%;
+    }
+    .page6para6{
+        margin-left: -20%;
+        font-size: 50%;
+    }
+  }
+  @media only screen and (min-device-width: 414px) and (min-device-height: 886px) and (orientation: portrait) {
+    .centeredfollow{                   /*follow us icon styling*/
+        position: absolute;
+        top: 68%;
+        left: -2%;
+        font-size: 70%;
+        font-weight: bold;
+        transform: rotate(270deg); text-align: center;
+    }
+
+    .para1{  /*studio proud*/
+        font-size: 250%;
+    }
+    .c1{
+        margin-left: 12%; /* Digital web products*/
+        margin-top: 5%;
+        font-size: 100%;
+    }
+    .c2{
+        margin-left: 12%; 
+        margin-top: -4%;
+        font-size: 100%; 
+    }
+    .c3{
+        margin-left: 12%; 
+        margin-top: -2%;
+        font-size: 40%;  
+        color: rgba(47, 46, 46, 0.765);  
+    }
+    .c4{
+        margin-left: 12%; 
+        margin-top: -2%;
+        font-size: 40%;
+        color: rgba(47, 46, 46, 0.765); /* Set the text color with RGBA value */
+    }
+    .secondpagepara{   /* 01 02 03 04 */
+        font-size: 60%;
+    }
+    .headings{ /* secodnd page headdings*/
+        margin-left: 10%; 
+        margin-top: 2%;
+    }
+
+    .thiedpagehead1{
+        color: aliceblue; margin-left: 25%;
+    }
+    .thiedpagehead2{
+        color: aliceblue; margin-left: 10%;
+
+    }
+    .fourthpagediv2{               /*green content*/
+        margin-left: 5%;
+        margin-top: -38%;
+        padding: 5%;
+        
+    }
+    .fourthpagediv4{                   /* All about our team */
+        margin-left: -13%;
+        font-size: 60%;
+}
+    .div4class1{                               /* beside all about our team*/
+        margin-left: 8%;  
+        font-size: 50%;   
+        margin-top: -12%;       
+    }
+
+    
+    .image-container {                   /* team images */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20%;
+        margin-top: -5%;
+        padding-right: 20%;
+        
+    }
+    .fifthpagehead{              /*Agency proud*/
+        font-size: 80%;
+        margin-left: 175px;
+    }
+    .flex {              /*flex box*/
+          
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 10%;
+        margin-left: 55%;
+        margin-top: -15%;
+        padding-bottom: 10%;
+        }
+     .box {     /*flex box*/
+        width: 33.33%; 
+        height: 33.33%; 
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .page6para1{
+        font-size: 60%;
+        margin-left: -8%;
+    }
+
+    .page6div1{   /*lastpage icons*/
+        margin-left: 68%; margin-top: -5%;
+        font-size: 50%;
+        }
+    .page6para2{            /*need more info*/
+        color: rgba(240, 248, 255, 0.651); font-size: 300%; font-family: 'MS PGothic', serif;
+        margin-left: -10%;
+    }
+    .page6div2{
+        border-bottom: 2px solid aquamarine; width: 15.5%; margin-top: -1%;
+        margin-left: -20%;
+    }
+    .page6para3{
+        border-bottom: 2px solid rgba(150, 150, 150, 0.221); width: 115%; padding-top: 7% ;
+        margin-left: -20%;
+    }
+    .page6para4{
+        margin-left: 62%; margin-top: -5%;
+        font-size: 20%;
+    }
+    .page6para5{  /* get in touch*/
+        margin-left: -20%;
+        font-size: 50%;
+    }
+    .page6para6{
+        margin-left: -20%;
+        font-size: 50%;
+    }
+  }
+  
+    </style>
+
+        <body>
+            <div class="imagecontainer">
+                <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\annie-spratt-QckxruozjRg-unsplash-scaled.webp" style="width: 100%; height: auto;">
+                <div class="centered">STUDIO</div>
+                <div class="centered2">We provide a free day to experience our benefits of digital world</div>
+                <div class="centereddish"><i class="fas fa-satellite-dish"></i></div>
+                <div class="centeredbars"><i class="fas fa-bars"></i></div>
+                <div class="centeredfollow">FOLLOW US</div>
+                <div class="top-right">ALL CASES    <i class="fas fa-plus"  style="background-color: white; color: rgba(0, 0, 0, 0.535); padding: 5px; border-radius: 50%;"></i></div>
+                <div class="bottom-left"><i class="fas fa-bars" style="transform: rotate(90deg) translateY(100%);" ></i></div>
+            </div> 
+            <div>
+                <h1 class="c1">DIGITAL WEB PRODUCTS</h1> <br>
+                <h1 class="c2">FOR AMAZING CLIENTS</h1><br>
+                <p class="c3">We work closely with your development team, marketting profissionals and stakeholders to design and </p><br>
+                <p class="c4">develop UX and UI that make your website application or software a joy to use,</p>
+            </div>
+            <div class="headings">
+                <div class="container">
+                    <div><h2 style=" font-size: 500%; margin-bottom: -10%; color:rgb(195, 193, 193)">01</h2> 
+                        <h3>PROTOTYPE</h3>
+                        <p class="secondpagepara">The more you use the more </p>
+                        <p class="secondpagepara">you have in your signifant</p>
+                        <p class="secondpagepara">mind</p>
+                    </div>
+                    <div><h2 style=" font-size: 500%; margin-bottom: -10%; color:rgb(195, 193, 193)">02</h2> 
+                        <h3>SKETCHING</h3>
+                        <p class="secondpagepara">The more you use the more </p>
+                        <p class="secondpagepara">you have in your signifant</p>
+                        <p class="secondpagepara">mind</p></div>
+                    <div><h2 style=" font-size: 500%; margin-bottom: -10%; color:rgb(195, 193, 193)">03</h2> 
+                        <h3 >WIREFRAME</h3>
+                        <p class="secondpagepara">The more you use the more </p>
+                        <p class="secondpagepara">you have in your signifant</p>
+                        <p class="secondpagepara">mind</p></div>
+                    <div><h2 style=" font-size: 500%; margin-bottom: -10%; color:rgb(195, 193, 193)">04</h2> 
+                        <h3 >UI-UX DESIGN</h3>
+                        <p class="secondpagepara">The more you use the more </p>
+                        <p class="secondpagepara">you have in your signifant</p>
+                        <p class="secondpagepara">mind</p></div>
+                </div>
+            </div>
+                <div style="position: relative;">
+                    <div style="display: flex; justify-content: center; align-items: center; background: linear-gradient( to top, rgba(0, 0, 0, 0.805) 70%, transparent 50%); margin-top: 5%;">
+                        <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\Corporate-Team-Building-Activities-Tampa-FL.jpg"  style="width: 70%; margin-left: 0%;">
+                    </div>
+                </div>
+                <div style="background-color: rgba(0, 0, 0, 0.805); padding-left: 15%; padding-bottom: 8%;">
+                    <div class="container2">
+                        <div><h3 style="font-size: 500%;  color:rgb(195, 193, 193)" >14</h3><h5 style="color: aliceblue; margin-top: -22%; margin-left: 7%;">Days</h5>
+                        <div style="border-bottom: 2px solid rgba(30, 33, 32, 0.395); width: 30%; margin-top: -1%;"></div><h4 style="color: aliceblue;">CASE RESEARCH</h4></div>
+                        <div><h3 style="font-size: 500%;  color:rgb(195, 193, 193)">24</h3><h5 style="color: aliceblue; margin-top: -22%; margin-left: 7%;">Hours</h5>
+                        <div style="border-bottom: 2px solid rgba(30, 33, 32, 0.395); width: 30%; margin-top: -1%;"></div><h4 style="color: aliceblue;">UX  PROTOTYPE</h4></div>
+                        <div><h3 style="font-size: 500%;  color:rgb(195, 193, 193)">3</h3><h5 style="color: aliceblue; margin-top: -22%; margin-left: 1%;">Months</h5>
+                            <div style="border-bottom: 2px solid rgba(30, 33, 32, 0.395); width: 30%; margin-top: -1%;"></div><h4 style="color: aliceblue ;">UI DESIGN</h4></div>
+                        <div><h3 style="font-size: 500%;  color:rgb(195, 193, 193)">90</h3><h5 style="color: aliceblue; margin-top: -22%; margin-left: 7%;">Days</h5>
+                            <div style="border-bottom: 2px solid rgba(30, 33, 32, 0.395); width: 30%; margin-top: -1%;"></div>  <h4 style="color: aliceblue;">FINAL LAUNCH</h4></div>
+                    </div>
+                    <div style="margin-top: 10%;">
+                        <h1 class="thiedpagehead1">THE THINGS </h1>
+                        <h1 class="thiedpagehead2">WE ARE ABLE TO DO</h1>
+                    </div>
+                    <div class="container3">
+                        <div style="margin-top: 5%;"><i class="fas fa-lightbulb" style="color: aliceblue; font-size: 155%; margin-left: 13%;"></i><h4 style="color: aliceblue;">DIGITAL PRODUCTS</h4>
+                        <p style="color: aliceblue;">Digital Branding <br> web & Mobile Sites<br> User Interface Design<br> Responsive Techs</p>
+                        </div>
+                        <div style="margin-top: 5%;"><i class="fas fa-paint-brush" style="color: aliceblue; font-size: 155%; margin-left: 8%;"></i><h4 style="color: aliceblue;">UI UX DESIGN</h4>
+                        <p style="color: aliceblue;">Digital Strategy <br> User Experience Design<br> User Interface Design<br>Mobile Sites</p>
+                        </div>
+                        <div style="margin-top: 5%;"><i class="fas fa-laptop-code" style="color: aliceblue; font-size: 155%; margin-left: 8%;"></i><h4 style="color: aliceblue ;">WEB DEVELOPMENT</h4>
+                        <p style="color: aliceblue;">Custom Platform <br> Backend Executions <br>Interface Apps <br> Mobile Systems</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- fourth page-->
+                <div class="fourthpage">
+                    <p class="para1">STUDIO PROUD<br>IS QUALITY OF<br>PARTNERS</p>
+                    <div class="fourthpagediv2">
+                        <p class="para2">We work closely with your <br>development team. Marketting <br>profissionals and stakeholder to <br> design and develop UX and UI <br>that make your website.<br>application or software a joy to <br>use</p>
+                        <div>
+                            <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\1530840201589.jpg" class="fourthpageimg">
+                            <div class="fourthpagediv3">
+                                <p><b>Marcus James</b></p>
+                                <p class="para3">IBIS HOTEL MANAGER</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fourthpagediv4" ><!--fourtpagediv4-->
+                        <p style="color: aliceblue; font-weight: bold; font-size: 300%; padding-left: 20%;">ALL ABOUT <br>THE OUR TEAM</p>
+                        <p class="div4class1">We work closely with your development team. markating <br>profissionls  and stakeholders to design and develop UX and UI <br>that make your website. application or a software a joy to use,</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="team-member">
+                        <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\1530840201589.jpg" alt="Marcus James" class="member-image">
+                        <p class="member-info"><b>Marcus James</b><br>EXECUTIVE CHIEF</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\dscf9435.webp" alt="Jessica Tanana" class="member-image">
+                        <p class="member-info"><b>Jessica Tanana</b><br>SENIOR ENGINEER</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\Tamer-Hassan.jpg" alt="Steven Mc'Laren" class="member-image">
+                        <p class="member-info"><b>Steven Mc'Laren</b><br>CREATIVE HEAD CHIEF</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\images.jpg" alt="Dasha Avdeieva" class="member-image">
+                        <p class="member-info"><b>Dasha Avdeieva</b><br>ACCOUNT MANAGER</p>
+                    </div>  
+                    <div class="team-member">
+                        <img src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\1555618495228.jpg" alt="Dmitry Samohin" class="member-image">
+                        <p class="member-info"><b>Dmitry Samohin</b><br>DIGITAL PRODUCER</p>
+                    </div>
+       
+                </div>
+                <div>
+                    <h1 class="fifthpagehead" ><p>AGENCY PROUD<br>IS QUALITY OF <br>PARTNERS</p></h1>
+                    <div class="flex">
+                        <div class="box" style="font-family: 'Gloucester MT Extra Condensed', cursive; font-size: 130%;"><b>Sentry</b></div>
+                        <div class="box" style="font-family: 'Forte', cursive; font-size: 130%; font-weight: bold;"><b>transit</b></div>
+                        <div class="box" style="font-family: 'HP Simplified Jpan', cursive; font-size: 130%; font-weight: bold;"><b>envoy</b></div>
+                        <div class="box" style="font-family: 'Forte', cursive; font-size: 130%; font-weight: bold;" ><b>Gomeo</b></div>
+                        <div class="box" style="font-family: 'Times New Romen'; font-size: 130%; font-weight: bold;"><b>Nordea</b></div>
+                        <div class="box" style="font-family: 'Times New Romen', cursive; font-size: 130%; font-weight: bold;"><b>Eye Level</b></div>
+                        <div class="box" style="font-family: 'Lucida Calligraphy', cursive; font-size: 130%;"><b>afnic</b></div>
+                        <div class="box" style="font-family: 'Century Schoolbook', cursive; font-size: 130%;">innoetics</div>
+                        <div class="box" style="font-family: 'Forte', cursive; font-size: 130%; font-weight: bold;"><b>webflow</b></div>
+                      </div>
+                </div>
+                <div class="background-container">
+                    <img class="image-overlay" src="C:\Users\satish\OneDrive\Desktop\WebDev_Internship_Prework_Sathish\images\globe-dots-black3 (1).png" alt="Overlay Image"> 
+                    <div class="content">
+                      <p class="page6para1" >LET'S HAVE A TALK ABOUT YOUR PROJECT.</p>
+                      <div class="page6div1"><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-google-plus"></i> <i class="fab fa-youtube"></i></div>
+                      <p  class="page6para2">Need more information or want<br>to get in touch?</p>
+                      <p class="page6para5">Get in touch</p>
+                      <div class="page6div2" ></div>
+                      <div  class="page6para3"></div>
+                      <p class="page6para6"><i class="fas fa-copyright"></i>2022 Tourog | All Rights Reserved</p>
+                      <p class="page6para4">Site created by <u>Themezinho</u></p>
+                    </div>
+                  </div>    
+        </body>   
+</html>
